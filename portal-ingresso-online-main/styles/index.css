@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+
+/* Components */
+
+a, button, i, h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Space Grotesk', sans-serif;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+
+a:hover {
+    -webkit-transform: scale(0.5);
+    transform: scale(1.1);
+}
+
+body {
+    background-color: black;
+}
+
+img {
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+
+img:hover {
+    -webkit-transform: scale(0.5);
+    transform: scale(1.1);
+}
+
+/* ClassStylesByComponents */
+
+.buttonOrangeFull {
+    background-color: #FF7300;
+    padding: 10px;
+    font-size: 18px;
+    list-style: none;
+    border-radius: 6px;
+    border: none;
+}
+
+.buttonTransparent {
+    background-color: transparent;
+    padding: 10px;
+    font-size: 18px;
+    list-style: none;
+    border: none;
+}
+
+.gradientBottom {
+    width: 100%;
+    position: absolute;
+}
+
+/* Header */
+
+#header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding-top: 20px;
+}
+
+#header nav {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#Authenticate {
+    display: flex;
+}
+
+#Authenticate div {
+    margin-right: 20px;
+}
+
+/* Main */
+
+#main {
+    display: flex;
+    padding: 100px 0px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(36, 35, 34, 1) 61%);
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    z-index: -1;
+}
+
+.MainLeftCta {
+    text-align: initial;
+    max-width: 600px;
+    margin: 20px;
+}
+
+.MainLeftCta h1 {
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    max-width: 90%;
+}
+
+.MainLeftCta h2 {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.MainLeftCta h2 {
+    font-size: 20px;
+}
+
+.MainLeftCta h2 {
+    font-size: 20px;
+}
+
+.MainLeftCta button {
+    width: 50%;
+    font-weight: bold;
+    padding: 15px 10px;
+    font-size: 20px;
+}
+
+#Cinema {
+    background-image: url(../img/filmes/capa-filmes.jpg);
+    Background-position: center;
+    Background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+
+    display: flex;
+    background-color: black;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.CinemaLeft {
+    text-align: initial;
+    margin: 20px;
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    max-width: 50%;
+    min-width: 600px;
+    padding-top: 100px;
+}
+
+.CinemaLeft div {
+    display: flex;
+    align-items: flex-start;
+}
+
+.CinemaLeft div h1 {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.CinemaLeft a {
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 2px 10px;
+    border: 3px solid white;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+.CinemaRigth {
+    text-align: initial;
+    max-width: 600px;
+    margin: 20px;
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    max-width: 50%;
+    min-width: 600px;
+    padding-top: 100px;
+
+}
+
+.CinemaRigth div {
+    display: flex;
+    align-items: flex-end;
+}
+
+.CinemaRigth a {
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 2px 10px;
+    border: 3px solid white;
+    border-radius: 20px;
+    font-size: 18px;
+}
+footer {
+    background-color: #333; /* Cor de fundo para o footer */
+    color: white; /* Cor do texto no footer */
+    padding: 20px 0;
+    width: 100%;
+}
+
+.caixa-footer {
+    display: flex;
+    justify-content: space-around; /* Distribui os itens com espaço ao redor */
+    align-items: center; /* Alinha os itens verticalmente */
+    flex-wrap: wrap; /* Faz com que os itens se reorganizem em várias linhas em telas menores */
+    max-width: 1200px; /* Tamanho máximo para o container */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.caixa-footer div {
+    flex: 1; /* Cada item ocupa uma parte proporcional do espaço */
+    text-align: center; /* Centraliza o texto de cada div */
+    margin: 10px 0;
+}
+
+.caixa-footer img {
+    max-width: 30px; /* Ajusta o tamanho dos ícones */
+    margin: 0 10px; /* Espaçamento entre os ícones */
+}
+
+.caixa-footer2 {
+    text-align: center; /* Centraliza o texto da segunda caixa */
+    padding-top: 10px;
+    background-color: #222; /* Cor de fundo para a segunda seção do footer */
+    color: #fff; /* Cor do texto */
+}
+
+.caixa-footer2 p {
+    margin: 0; /* Remove as margens */
+}

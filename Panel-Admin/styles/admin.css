@@ -1,0 +1,170 @@
+/* Melhorias de estilo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#header-admin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e2f;
+    padding: 15px 30px;
+    color: white;
+}
+
+nav a {
+    margin-right: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#AdminAuthenticate {
+    display: flex;
+    align-items: center;
+}
+
+#AdminAuthenticate span {
+    margin-right: 20px;
+    color: #fff;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.buttonTransparent {
+    background-color: transparent;
+    color: #fff;
+}
+
+.buttonOrangeFull {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+}
+
+/* Painel principal */
+#main-admin {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #1e1e2f;
+}
+
+.admin-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    color: #ff6600;
+}
+
+.card p {
+    font-size: 1.5em;
+}
+
+/* Tabela interativa */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #1e1e2f;
+    color: white;
+    cursor: pointer;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.buttonTransparent a, .buttonOrangeFull a {
+    color: white;
+    text-decoration: none;
+}
+
+.buttonTransparent:hover {
+    background-color: #ddd;
+}
+
+.buttonOrangeFull:hover {
+    background-color: #e55d00;
+}
+
+/* Footer */
+footer {
+    background-color: #1e1e2f;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h2 {
+    color: #ff6600;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.caixa-footer img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .admin-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer div {
+        margin-bottom: 20px;
+    }
+}

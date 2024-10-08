@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | Gerenciamento de Ingressos</title>
+    <link rel="stylesheet" href="styles/admin.css">
+    <script src="https://kit.fontawesome.com/ca4500540b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div id="header-admin">
+                <img src="img\id-visual\simbolo.png" alt="Logo" />
+                <nav>
+                    <a href="Dashboard.html">Dashboard</a>
+                    <a href="GerenciarEventos.html">Gerenciar Eventos</a>
+                    <a href="GerenciarIngressos.html">Gerenciar Ingressos</a>
+                    <a href="Relatorios.html">Relatórios</a>
+                </nav>
+                <div id="AdminAuthenticate">
+                    <span>Bem-vindo, Admin</span>
+                    <button class="buttonTransparent fa-lg fa-solid fa-sign-out-alt"> Sair</button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div id="main-admin">
+                <section id="admin-overview">
+                    <h1>Painel de Gerenciamento</h1>
+                    <div class="admin-cards">
+                        <div class="card">
+                            <h2>Total de Ingressos Vendidos</h2>
+                            <p>2500</p>
+                        </div>
+                        <div class="card">
+                            <h2>Total de Eventos</h2>
+                            <p>20</p>
+                        </div>
+                        <div class="card">
+                            <h2>Receita Total</h2>
+                            <p>R$ 120.000,00</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="admin-manage-tickets">
+                    <h2>Gerenciar Ingressos</h2>
+                    <input type="text" id="searchInput" placeholder="Pesquisar eventos..." onkeyup="filterTable()"
+                        style="padding: 10px; margin-bottom: 20px; width: 100%;">
+
+                    <table id="ticketTable">
+                        <thead>
+                            <tr>
+                                <th onclick="sortTable(0)">Evento</th>
+                                <th onclick="sortTable(1)">Data</th>
+                                <th onclick="sortTable(2)">Ingressos Vendidos</th>
+                                <th onclick="sortTable(3)">Preço (R$)</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>The Batman</td>
+                                <td>15/10/2024</td>
+                                <td>200</td>
+                                <td>50,00</td>
+                                <td>
+                                    <button class="buttonTransparent"><a href="#">Editar</a></button>
+                                    <button class="buttonOrangeFull"><a href="#">Excluir</a></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>O Rei Leão</td>
+                                <td>20/10/2024</td>
+                                <td>180</td>
+                                <td>60,00</td>
+                                <td>
+                                    <button class="buttonTransparent"><a href="#">Editar</a></button>
+                                    <button class="buttonOrangeFull"><a href="#">Excluir</a></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <div>
+                <h2>Belém</h2>
+                <p>Av. Presidente Vargas, 1140 - Centro</p>
+            </div>
+            <div>
+                <h2>Santarem</h2>
+                <p>Rua Coronel Oscar Porto, 70 - Itaim Bibi</p>
+            </div>
+            <div>
+                <h2>Siga</h2>
+                <img src="../img/icons/icon-instagram.png" alt="Instagram">
+                <img src="../img/icons/icon-linkedin.png" alt="Linkedin">
+            </div>
+            <div>
+                <h2>© 2024 QuantumERP</h2>
+            </div>
+        </footer>
+    </div>
+
+    <script src="scripts/admin.js"></script>
+</body>
+
+</html>
